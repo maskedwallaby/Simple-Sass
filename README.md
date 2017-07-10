@@ -24,9 +24,9 @@ If you are not using a build tool, either GUI or CLI-based, you can use the Sass
 
 	sudo sass --watch sass/style.scss:style.css
 
-Sudo is necessary to overwrite whatever previous style.css file already exists in the main directory. All of your other sass files should be imported into sass/style.scss.
+`Sudo` is necessary to overwrite whatever previous style.css file already exists in the main directory. All of your other sass files should be imported into `sass/style.scss`.
 
-That said, there's no shame in using GUI tools. [Prepos](https://prepros.io/), [Koala](http://koala-app.com/), and [Scout](http://scout-app.io) are some great free options. At work, I use [CodeKit](https://codekitapp.com), but it's Mac-only. Then of course there's [Gulp].) :)
+That said, there's no shame in using GUI tools. [Prepos](https://prepros.io/), [Koala](http://koala-app.com/), and [Scout](http://scout-app.io) are some great free options. At work, I use [CodeKit](https://codekitapp.com), but it's Mac-only. Then of course there's [Gulp](http://gulpjs.com). :)
 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
