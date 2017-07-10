@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mac OS X Files
 .DS_Store
 
@@ -37,3 +38,7 @@ GitHub.sublime-settings
 
 # General PrePos files to ignore
 prepros-6.config
+=======
+.sass-cache/
+*.css.map
+>>>>>>> 7f7ad75fab20f36a8bfbb1b845272445a8531c6e
