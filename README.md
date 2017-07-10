@@ -1,44 +1,32 @@
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-_s
+Simple Sass WP
 ===
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called Simple Sass. I'm a theme based on Automattic's Underscores them, and I'm meant for hacking. Don't use me as a parent theme, but flex me like a piece of putty. You know you want to.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
+My CSS is Sass-based and based on a simplified version of the BEMit methodology. That's why you downloaded me, right?
 
 * A just right amount of lean, well-commented, modern, HTML5 templates.
 * A helpful 404 template.
-* A custom header implementation in `inc/custom-header.php` just add the code snippet found in the comments of `inc/custom-header.php` to your `header.php` template.
 * Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
 * Some small tweaks in `inc/template-functions.php` that can improve your theming experience.
 * A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+* Smartly organized starter CSS in `the /sass/ directory` that will help you to quickly get your design off the ground.
+* Licensed under GPLv3 or later. :) Use it to make something cool.
 
 Getting Started
 ---------------
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+== Compiling SASS ==
 
-If you want to set things up manually, download `_s` from GitHub. The first thing you want to do is copy the `_s` directory and change the name to something else (like, say, `megatherium-is-awesome`), and then you'll need to do a five-step find and replace on the name in all the templates.
+If you are not using a build tool, either GUI or CLI-based, you can use the Sass command line to compile the sass files found in this theme. Here’s the command you’ll want to use:
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for `Text Domain: _s` in style.css.
-4. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-5. Search for `_s-` to capture prefixed handles.
+	sudo sass --watch sass/style.scss:style.css
 
-OR
+Sudo is necessary to overwrite whatever previous style.css file already exists in the main directory. All of your other sass files should be imported into sass/style.scss.
 
-1. Search for: `'_s'` and replace with: `'megatherium-is-awesome'`
-2. Search for: `_s_` and replace with: `megatherium_is_awesome_`
-3. Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium-is-awesome` in style.css.
-4. Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium_is_Awesome</code>
-5. Search for: `_s-` and replace with: `megatherium-is-awesome-`
-
-Then, update the stylesheet header in `style.css` and the links in `footer.php` with your own information. Next, update or delete this readme.
+That said, there's no shame in using GUI tools. [Prepos](https://prepros.io/), [Koala](http://koala-app.com/), and [Scout](http://scout-app.io) are some great free options. At work, I use [CodeKit](https://codekitapp.com), but it's Mac-only. Then of course there's [Gulp].) :)
 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
